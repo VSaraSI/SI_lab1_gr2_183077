@@ -51,3 +51,26 @@ class Student {
 		return krediti;
 	}
 }
+class Faculty{
+	String name;
+	List<Student> lista=new ArrayList<>;
+	
+	public void dodavanjeStudent(Student s) {
+		lista.add(s);
+	}
+	public void brisenje Student(Student t) {
+		lista.remove(t);
+	}
+	public double prosekNaStudenti() {
+		int k=0;
+		double prosek=0;
+		while(lista!=null) {
+			for(int i=0;i<lista.getGrades();i++) {
+			k+=lista.getGrades[i];
+		}
+			prosek+=k;
+			k=0;
+	}
+		prosek=prosek/lista.size();
+		return prosek;
+}}
